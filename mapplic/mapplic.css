@@ -130,6 +130,11 @@ svg a {
 
 }
 
+.mapplic-pin.mapplic-animate {
+	-webkit-animation: bounce-in 0.4s forwards;
+	animation: bounce-in 0.4s forwards;
+}
+
 @-webkit-keyframes bounce-in {
 	0%   {margin-top: -120px; opacity: 0;}
 	33%  {margin-top: -25px; opacity: 1;}

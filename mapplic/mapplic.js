@@ -14,7 +14,7 @@
 			locations: true,
 			minimap: false,
 			sidebar: false,
-			deeplinking: true,
+			deeplinking: false,
 			search: false,
 			clearbutton: false,
 			hovertip: true,
