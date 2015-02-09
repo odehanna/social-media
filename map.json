@@ -16,35 +16,35 @@
 				"action":"tooltip",
 				"x":"0.71",
 				"y":"0.1857",
-				"pin":"red",
+				"pin":"red"
 			},
 			{
 				"id":"philippines",
 				"action":"tooltip",
 				"x":"0.0132",
 				"y":"0.00308",
-				"pin":"red",
+				"pin":"red"
 			},
 			{
 				"id":"libya",
 				"action":"tooltip",
 				"x":"0.50",
 				"y":"0.2634",
-				"pin":"red",
+				"pin":"red"
 			},
 			{
 				"id":"somalia",
 				"action":"tooltip",
 				"x":"0.42",
 				"y":"0.18",
-				"pin":"red",
+				"pin":"red"
 			},
 			{
 				"id":"flintlock",
 				"action":"tooltip",
 				"x":"0.46",
 				"y":"0.3489",
-				"pin":"red",
+				"pin":"red"
 			}
 		]
 		}
