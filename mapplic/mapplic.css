@@ -1,0 +1,273 @@
+svg {
+	width: 100%;
+	height: 100%;
+}
+
+svg a {
+	cursor: pointer;
+}
+
+.mapplic-element a {
+	color: #333;
+	text-decoration: none !important;
+}
+
+.mapplic-element input,
+.mapplic-element button {
+	outline: none;
+}
+
+.mapplic-element * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+
+.mapplic-element {
+	background-color: #494949;
+	font-size: 0;
+	overflow: hidden;
+}
+
+/* Fullscreen */
+:-webkit-full-screen {
+	width: 100%;
+	height: 100% !important;
+}
+
+:-webkit-full-screen .mapplic-fullscreen-button {
+	background-image: url(images/fullscreen-exit.png);
+}
+
+/* Preloader */
+.mapplic-element.mapplic-loading {
+	background: #494949 url(images/loader.gif) no-repeat center;
+}
+
+.mapplic-element > * {
+	opacity: 1;
+	-webkit-transition: opacity 0.6s;
+	-moz-transition: opacity 0.6s;
+	transition: opacity 0.6s;
+}
+
+.mapplic-element.mapplic-loading > * {
+	opacity: 0;
+}
+
+/* Main elements */
+.mapplic-container {
+	background-color: #494949;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+:-webkit-full-screen .mapplic-container {
+	width: 100%;
+}
+
+.mapplic-map {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/* Map layer */
+.mapplic-layer {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.mapplic-layer img {
+	width: 100%;
+}
+
+.mapplic-map-image {
+	cursor: url(images/openhand.cur), default;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.mapplic-map.mapplic-dragging .mapplic-map-image {
+	cursor: url(images/closedhand.cur), move;
+}
+
+.mapplic-locations {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.mapplic-pin {
+	background-image: url(images/pin-red-small.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	margin-top: -25px;
+	margin-left: -10px;
+	position: absolute;
+}
+
+@media (min-width: 800px){
+.mapplic-pin {
+	background-image: url(images/pin-red.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 70px;
+	height: 70px;
+	margin-top: -35px;
+	margin-left: -20px;
+	position: absolute;
+}
+
+}
+
+.mapplic-pin.mapplic-animate {
+	-webkit-animation: bounce-in 0.4s forwards;
+	animation: bounce-in 0.4s forwards;
+}
+
+@-webkit-keyframes bounce-in {
+	0%   {margin-top: -120px; opacity: 0;}
+	33%  {margin-top: -25px; opacity: 1;}
+	66%  {margin-top: -30px;}
+	100% {margin-top: -25px; opacity: 1;}
+}
+
+
+.mapplic-minimap img {
+display: none;
+}
+
+/* Clear Button */
+.mapplic-clear-button {
+	background-color: #fff;
+	background-image: url(images/target.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 10px;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* Fullscreen Button */
+.mapplic-fullscreen-button {
+	background-color: #fff;
+	background-image: url(images/fullscreen.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 10px;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Levels */
+.mapplic-levels {
+	background-color: #494949;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.mapplic-levels > * {
+	display: block;
+	width: 100%;
+}
+
+.mapplic-levels-select {
+	border: none;
+	margin: 0;
+	padding: 6px 2px;
+	font-size: 12px;
+	outline: none;
+}
+
+.mapplic-levels a {
+	background-color: #494949;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	cursor: pointer;
+	height: 20px;
+	width: 100%;
+}
+
+.mapplic-levels .mapplic-levels-up {
+	background-image: url(images/arrow-up.png);
+	border-bottom: 1px solid #eee;
+}
+
+.mapplic-levels .mapplic-levels-down {
+	background-image: url(images/arrow-down.png);
+	border-top: 1px solid #eee;
+}
+
+.mapplic-levels a.disabled {
+	background-color: #eee;
+	cursor: default;
+}
+
+
+
+/* Coordinates */
+.mapplic-coordinates {
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #333;
+	position: absolute;
+	margin: 10px;
+	margin-left: -80px;
+	padding: 4px 6px;
+	font-size: 14px;
+	top: 0;
+	left: 50%;
+	pointer-events: none;
+}
+
+/* Responsive layout */
+@media all and (max-width: 240px) {
+	.mapplic-container,
+	.mapplic-sidebar {
+		width: 100%;
+	}
+
+	.mapplic-container {
+		height: 100%;
+	}
+
+	.mapplic-tooltip {
+		max-width: 160px;
+	}
+
+	.mapplic-minimap {
+		display: none;
+	}
+
+	.mapplic-element {
+		height: 100% !important;
+	}
+
+	.mapplic-fullscreen-button {
+		display: none;
+	}
+}
+div.mapplic-container,
+div#mapplic.mapplic-element{
+	width:100% !important;
+	height:100% !important;
+}

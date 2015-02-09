@@ -1,0 +1,124 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	background-color: #494949;
+	font-family: 'Lato', sans-serif;
+	font: normal 100%/1.5 sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+ 	max-width: 100%
+}
+
+#bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#map-position{
+	position: absolute;
+	top: 25px;
+	right: 0;
+	bottom: 0;
+	left: -20px;
+	margin: 0;
+	z-index:-1;
+}
+
+.big-screen{
+	display: none;
+}
+.copy{
+	display: none;
+}
+.title{
+	color:#931524;
+}
+
+@media (min-width: 340px){
+	#map-position{
+	top: 50px;
+	right: 0;
+	bottom: 0;
+	left: -20px;
+}
+}
+
+@media (min-width: 800px){
+	.big-screen{
+	display: block;
+	max-width: 420px;
+}
+	.small-screen{
+		display: none;
+	}
+	#map-position{
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+}
+.copy{
+	display: block;
+	width: 230px;
+	position:relative;
+}
+.text1{
+	position: absolute;
+	top: 255px;
+	right: 0;
+	bottom: 0;
+	left: 28px;
+	margin: 0;
+	font-size: 0.9rem;
+	line-height: 1.3;
+}
+.text2{
+	position: absolute;
+	top: 450px;
+	right: 0;
+	bottom: 0;
+	left: 28px;
+	margin: 0;
+	font-size: 0.9rem;
+	line-height: 1.3;
+}
+}
+
+
+@media (min-width: 1800px){
+	.big-screen{
+	 max-width: 564px;
+}
+
+/* Map */
+.map-container {
+	font-family: 'PT Sans';
+	margin: 0 auto;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+div#mapplic.mapplic-element,
+div.mapplic-container{
+	height: 100% !important;
+}

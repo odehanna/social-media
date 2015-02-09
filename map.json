@@ -1,0 +1,56 @@
+{
+	"mapwidth":"1600",
+	"mapheight":"1600",
+	"categories":[
+
+	],
+	"levels":[
+	{
+		"id":"map",
+		"map":"images/map.svg",
+		"color": "#494949",
+		"locations":
+		[
+			{
+				"id":"isis",
+				"action":"tooltip",
+				"link":"http://en.wikipedia.org/wiki/Iraq",
+				"x":"0.71",
+				"y":"0.1857",
+				"pin":"red",
+				"zoom": "4"
+			},
+			{
+				"id":"libya",
+				"action":"tooltip",
+				"link":"http://en.wikipedia.org/wiki/Libya",
+				"x":"0.50",
+				"y":"0.2634",
+				"pin":"red",
+				"zoom": "4"
+			},
+			{
+				"id":"tunisia",
+				"action":"tooltip",
+				"link":"http://en.wikipedia.org/wiki/Tunisia",
+				"x":"0.42",
+				"y":"0.18",
+				"pin":"red",
+				"zoom": "4"
+			},
+			{
+				"id":"flintlock",
+				"action":"tooltip",
+				"link":"http://en.wikipedia.org/wiki/Niger",
+				"x":"0.46",
+				"y":"0.3489",
+				"pin":"red",
+				"zoom": "4"
+			}
+		]
+		}
+	],
+	"minimap":"false",
+	"sidebar":"false",
+	"zoomlimit":"4"
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<title>Area Handbook | SecDev Foundation</title>
+
+		<!-- Viewport for Responsivity -->
+		<meta name="handheldfriendly" content="true">
+		<meta name="mobileoptimized" content="240">
+		<meta name="viewport" content="width=100%, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<meta name="description" content="Libya Handbook Map">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="mapplic/mapplic.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<!-- Internet Explorer -->
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="mapplic/mapplic-ie.css">
+			<script type="text/javascript" src="js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="bar">
+				<div class="copy">
+					<p class="text1"><strong class="title">Area Handbooks</strong> are go-to reference guides for open source information on critical locations.  From population distribution to critical people and recent events, Area Handbooks provide users with baseline information to validate and caveat their findings.
+					</p>
+					<p class="text2"><strong class="title">SecDev’s Area Handbooks</strong> place extra emphasis on telecommunications capabilities, enabling a more accurate characterization of the information space.  In general, people can’t use social media if they don’t have access to the internet.  SecDev uses ITU data and international reporting to provide context and perspective on user-generated content.
+					</p>
+				</div>
+					<img class="img-flex small-screen" src="images/mobile-bar.png" alt="Libya Handbook">
+					<img class="img-flex big-screen" src="images/sidebar.png" alt="Libya Handbook">
+			</div>
+
+				<!-- Map -->
+				<div id="map-position">
+						<div class="map-container">
+							<div id="mapplic"></div>
+						</div>
+				</div>
+		</div>
+
+
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/hammer.min.js"></script>
+		<script type="text/javascript" src="js/smoothscroll.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="mapplic/mapplic.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#mapplic').mapplic({
+					source: 'map.json',
+					sidebar: false,
+					minimap: true,
+					locations: true,
+					animate: true,
+					deeplinking: true,
+					fullscreen: false,
+					hovertip: true,
+					developer: false,
+					maxscale: 4
+				});
+			});
+		</script>
+	</body>
+</html>
