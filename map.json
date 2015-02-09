@@ -14,7 +14,6 @@
 			{
 				"id":"isis",
 				"action":"tooltip",
-				"link":"http://en.wikipedia.org/wiki/Iraq",
 				"x":"0.71",
 				"y":"0.1857",
 				"pin":"red",
@@ -23,7 +22,6 @@
 			{
 				"id":"libya",
 				"action":"tooltip",
-				"link":"http://en.wikipedia.org/wiki/Libya",
 				"x":"0.50",
 				"y":"0.2634",
 				"pin":"red",
@@ -32,7 +30,6 @@
 			{
 				"id":"tunisia",
 				"action":"tooltip",
-				"link":"http://en.wikipedia.org/wiki/Tunisia",
 				"x":"0.42",
 				"y":"0.18",
 				"pin":"red",
@@ -41,7 +38,6 @@
 			{
 				"id":"flintlock",
 				"action":"tooltip",
-				"link":"http://en.wikipedia.org/wiki/Niger",
 				"x":"0.46",
 				"y":"0.3489",
 				"pin":"red",
