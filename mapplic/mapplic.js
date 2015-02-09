@@ -20,7 +20,7 @@
 			hovertip: true,
 			fullscreen: false,
 			developer: false,
-			animate: false
+			animate: true
 		};
 
 		self.init = function(el, params) {
@@ -94,12 +94,6 @@
 					this.title.text(location.title);
 					this.desc.html(location.description);
 
-					// Shift
-					var pinselect = $('.mapplic-pin[data-location="' + location.id + '"]');
-					if (pinselect.length == 0) {
-						this.shift = 6;
-					}
-					else this.shift = pinselect.height() + 6;
 
 					// Loading & positioning
 					$('img', this.desc).load(function() {
