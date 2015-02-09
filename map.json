@@ -42,8 +42,8 @@
 			{
 				"id":"flintlock",
 				"action":"tooltip",
-				"x":"0.31",
-				"y":"0.26",
+				"x":"0.32",
+				"y":"0.25",
 				"pin":"red"
 			}
 		]
