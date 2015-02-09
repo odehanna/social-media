@@ -170,33 +170,6 @@
 			}
 		}
 
-		// Deeplinking
-		function Deeplinking() {
-			this.init = function() {
-				// Check hash for location
-				var id = location.hash.slice(1);
-				if (id) {
-					var locationData = getLocationData(id);
-
-					self.tooltip.set(locationData);
-					showLocation(id, 0);
-					self.tooltip.show(locationData);
-				}
-				else zoomTo(0.5, 0.5, 1, 0);
-
-				// Hashchange
-				$(window).on('hashchange', function() {
-					var id = location.hash.slice(1);
-
-					if (id) {
-						var locationData = getLocationData(id);
-
-						self.tooltip.set(locationData);
-						showLocation(id, 800);
-						self.tooltip.show(locationData);
-					}
-				});
-			}
 
 			this.clear = function() {
 				// if IE 6-8, else normal browsers
