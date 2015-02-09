@@ -20,7 +20,7 @@
 			hovertip: true,
 			fullscreen: false,
 			developer: false,
-			animate: true
+			animate: false
 		};
 
 		self.init = function(el, params) {
