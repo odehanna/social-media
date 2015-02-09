@@ -20,6 +20,14 @@
 				"zoom": "4"
 			},
 			{
+				"id":"philippines",
+				"action":"tooltip",
+				"x":"0.0132",
+				"y":"0.00308",
+				"pin":"red",
+				"zoom": "4"
+			},
+			{
 				"id":"libya",
 				"action":"tooltip",
 				"x":"0.50",
@@ -28,7 +36,7 @@
 				"zoom": "4"
 			},
 			{
-				"id":"tunisia",
+				"id":"somalia",
 				"action":"tooltip",
 				"x":"0.42",
 				"y":"0.18",
