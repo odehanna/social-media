@@ -21,8 +21,8 @@
 			{
 				"id":"philippines",
 				"action":"tooltip",
-				"x":"0.9",
-				"y":"0.3",
+				"x":"1.1",
+				"y":"0.25",
 				"pin":"red"
 			},
 			{
