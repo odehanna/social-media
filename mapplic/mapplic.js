@@ -14,14 +14,13 @@
 			locations: true,
 			minimap: false,
 			sidebar: false,
-			deeplinking: false,
+			deeplinking: true,
 			search: false,
 			clearbutton: false,
 			hovertip: true,
 			fullscreen: false,
 			developer: false,
-			animate: true,
-			maxscale: 4
+			animate: true
 		};
 
 		self.init = function(el, params) {
