@@ -14,7 +14,7 @@
 			{
 				"id":"isis",
 				"action":"tooltip",
-				"x":"0.71",
+				"x":"0.5",
 				"y":"0.1857",
 				"pin":"red"
 			},
@@ -50,6 +50,5 @@
 		}
 	],
 	"minimap":"false",
-	"sidebar":"false",
-	"zoomlimit":"4"
+	"sidebar":"false"
 }
