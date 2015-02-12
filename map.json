@@ -30,7 +30,8 @@
 				"action":"tooltip",
 				"x":"0.355",
 				"y":"0.193",
-				"pin":"red"
+				"pin":"red",
+				"link": "http://anna-odeh.com"
 			},
 			{
 				"id":"somalia",
