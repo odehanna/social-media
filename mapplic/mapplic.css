@@ -105,7 +105,7 @@ svg a {
 	height: 100%;
 }
 
-.mapplic-pin {
+.mapplic-pin-alternate {
 	background-image: url(images/pin-red-small.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -116,17 +116,39 @@ svg a {
 	position: absolute;
 }
 
-@media (min-width: 800px){
-.mapplic-pin {
-	background-image: url(images/pin-red.png);
+/*.mapplic-pin {
+	background-image: url(images/pin-red-small.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 70px;
-	height: 70px;
-	margin-top: -35px;
-	margin-left: -20px;
+	width: 30px;
+	height: 30px;
+	margin-top: -25px;
+	margin-left: -10px;
 	position: absolute;
-}
+}*/
+
+@media (min-width: 800px){
+	.mapplic-pin-alternate {
+		background-image: url(images/pin-red.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 60px;
+		height: 60px;
+		margin-top: -35px;
+		margin-left: -20px;
+		position: absolute;
+	}
+
+	/*.mapplic-pin {
+		background-image: url(images/pin-red.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 70px;
+		height: 70px;
+		margin-top: -35px;
+		margin-left: -20px;
+		position: absolute;
+	}*/
 
 }
 

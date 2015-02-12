@@ -20,7 +20,8 @@
 			hovertip: true,
 			fullscreen: false,
 			developer: false,
-			animate: true
+			animate: true,
+			maxscale: 4
 		};
 
 		self.init = function(el, params) {
@@ -95,7 +96,7 @@
 					this.desc.html(location.description);
 
 					// Shift
-					var pinselect = $('.mapplic-pin[data-location="' + location.id + '"]');
+					var pinselect = $('.mapplic-pin-alternate[data-location="' + location.id + '"]');
 					if (pinselect.length == 0) {
 						this.shift = 6;
 					}
@@ -129,7 +130,7 @@
 					this.desc.html(location.description);
 
 					// Shift
-					var pinselect = $('.mapplic-pin[data-location="' + location.id + '"]');
+					var pinselect = $('.mapplic-pin-alternate[data-location="' + location.id + '"]');
 					if (pinselect.length == 0) {
 						this.shift = 6;
 					}
@@ -170,6 +171,33 @@
 			}
 		}
 
+		// Deeplinking
+		function Deeplinking() {
+			this.init = function() {
+				// Check hash for location
+				var id = location.hash.slice(1);
+				if (id) {
+					var locationData = getLocationData(id);
+
+					self.tooltip.set(locationData);
+					showLocation(id, 0);
+					self.tooltip.show(locationData);
+				}
+				else zoomTo(0.5, 0.5, 1, 0);
+
+				// Hashchange
+				$(window).on('hashchange', function() {
+					var id = location.hash.slice(1);
+
+					if (id) {
+						var locationData = getLocationData(id);
+
+						self.tooltip.set(locationData);
+						showLocation(id, 800);
+						self.tooltip.show(locationData);
+					}
+				});
+			}
 
 			this.clear = function() {
 				// if IE 6-8, else normal browsers
@@ -194,7 +222,7 @@
 				// Events
 				$(self.map).on('mouseover', '.mapplic-layer a', function() {
 					var data = '';
-					if ($(this).hasClass('mapplic-pin')) {
+					if ($(this).hasClass('mapplic-pin-alternate')) {
 						data = $(this).data('location');
 						s.shift = $(this).height() + 6;
 					}
@@ -530,7 +558,8 @@
 								var target = '#' + value.id;
 								if (value.action == 'redirect') target = value.link;
 
-								var pin = $('<a></a>').attr('href', target).addClass('mapplic-pin').css({'top': top + '%', 'left': left + '%'}).appendTo(layer);
+								// var pin = $('<a></a>').attr('href', target).addClass('mapplic-pin').css({'top': top + '%', 'left': left + '%'}).appendTo(layer);
+								var pin = $('<a></a>').addClass('mapplic-pin-alternate').css({'top': top + '%', 'left': left + '%'}).appendTo(layer);
 								pin.attr('data-location', value.id);
 								pin.addClass(value.pin);
 							}
@@ -545,12 +574,12 @@
 
 			// Pin animation
 			if (self.o.animate) {
-				$('.mapplic-pin').css('opacity', '0');
+				$('.mapplic-pin-alternate').css('opacity', '0');
 				window.setTimeout(animateNext, 200);
 			}
 
 			function animateNext() {
-				var select = $('.mapplic-pin:not(.mapplic-animate):visible');
+				var select = $('.mapplic-pin-alternate:not(.mapplic-animate):visible');
 
 				//console.log('enter');
 
@@ -560,7 +589,7 @@
 				}
 				else {
 					$('.mapplic-animate').removeClass('mapplic-animate');
-					$('.mapplic-pin').css('opacity', '1');
+					$('.mapplic-pin-alternate').css('opacity', '1');
 				}
 			}
 
