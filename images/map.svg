@@ -10,12 +10,12 @@
 
 			svg a .state {
 				fill: #565656;
-				opacity: 0;
+				opacity: 1;
 				transition: opacity .15s;
 			}
 
 			svg a .state:hover {
-				opacity: 1;
+				opacity: 0;
 			}
 		</style>
 <g id="background">
