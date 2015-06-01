@@ -15,7 +15,7 @@
 				"id":"isis",
 				"action":"tooltip",
 				"x":"0.45",
-				"y":"0.4",
+				"y":"0.36",
 				"pin":"red"
 			},
 			{
@@ -36,7 +36,7 @@
 				"id":"yemen",
 				"action":"tooltip",
 				"x":"0.5",
-				"y":"0.511",
+				"y":"0.51",
 				"pin":"red"
 			},
 			{
