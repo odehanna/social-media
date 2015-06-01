@@ -28,8 +28,8 @@
 			{
 				"id":"libya",
 				"action":"tooltip",
-				"x":"0.355",
-				"y":"0.193",
+				"x":"0.3",
+				"y":"0.4",
 				"pin":"red"
 			},
 			{
@@ -43,7 +43,7 @@
 				"id":"lake_chad_basin",
 				"action":"tooltip",
 				"x":"0.265",
-				"y":"0.49",
+				"y":"0.485",
 				"pin":"red"
 			}
 		]
