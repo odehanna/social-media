@@ -33,17 +33,17 @@
 				"pin":"red"
 			},
 			{
-				"id":"somalia",
+				"id":"yemen",
 				"action":"tooltip",
 				"x":"0.53",
 				"y":"0.31",
 				"pin":"red"
 			},
 			{
-				"id":"flintlock",
+				"id":"lake_chad_basin",
 				"action":"tooltip",
-				"x":"0.32",
-				"y":"0.25",
+				"x":"0.29",
+				"y":"0.5",
 				"pin":"red"
 			}
 		]
