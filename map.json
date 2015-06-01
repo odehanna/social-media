@@ -42,8 +42,8 @@
 			{
 				"id":"lake_chad_basin",
 				"action":"tooltip",
-				"x":"0.29",
-				"y":"0.5",
+				"x":"0.26",
+				"y":"0.47",
 				"pin":"red"
 			}
 		]
