@@ -14,29 +14,29 @@
 			{
 				"id":"isis",
 				"action":"tooltip",
-				"x":"0.49",
-				"y":"0.372",
+				"x":"0.45",
+				"y":"0.375",
 				"pin":"red"
 			},
 			{
 				"id":"philippines",
 				"action":"tooltip",
-				"x":"0.946",
-				"y":"0.51",
+				"x":"0.96",
+				"y":"0.52",
 				"pin":"red"
 			},
 			{
 				"id":"libya",
 				"action":"tooltip",
-				"x":"0.36",
-				"y":"0.424",
+				"x":"0.3",
+				"y":"0.428",
 				"pin":"red"
 			},
 			{
 				"id":"yemen",
 				"action":"tooltip",
-				"x":"0.58",
-				"y":"0.48",
+				"x":"0.5",
+				"y":"0.51",
 				"pin":"red"
 			},
 			{
