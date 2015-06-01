@@ -2,20 +2,22 @@
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1224 792" enable-background="new 0 0 1224 792" xml:space="preserve">
-		<style type="text/css">
+	 	 <style type="text/css">
 			svg .state {
-				fill: #939393;
+				fill: #989899;
+				stroke:#fff;
+				stroke-width:0.75;
 				stroke-opacity:1;
 			}
 
 			svg a .state {
-				fill: #565656;
-				opacity: 1;
+				fill: #6d6d6d;
+				opacity: 0;
 				transition: opacity .15s;
 			}
 
 			svg a .state:hover {
-				opacity: 0;
+				opacity: 1;
 			}
 		</style>
 <g id="background">
