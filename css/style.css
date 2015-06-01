@@ -109,6 +109,11 @@ img {
 	.big-screen{
 	 max-width: 564px;
 }
+.copy{
+	display: block;
+	width: 280px;
+	position:relative;
+}
 
 /* Map */
 .map-container {
